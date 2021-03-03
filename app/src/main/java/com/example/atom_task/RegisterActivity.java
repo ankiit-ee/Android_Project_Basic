@@ -49,7 +49,9 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void createAccount(){
-        String name = inputName.getText().toString();
+        String name = inputName.getText().toString().trim();
+        String email = name.concat("@mail.com");
+        String password = name.concat("123456789");
 
         if(TextUtils.isEmpty(name)){
             Toast.makeText(this, "Please Enter your Name", Toast.LENGTH_SHORT).show();
@@ -62,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();
 
-            mAuth.createUserWithEmailAndPassword(name, name).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){

@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.logging.Handler;
 
 public class MainActivity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,4 +35,10 @@ public class MainActivity extends AppCompatActivity {
         }; thread.start();
 
     }
+
+    public void logout(View view) {
+        mAuth = FirebaseAuth.getInstance();
+        mAuth.signOut();
+    }
+
 }
