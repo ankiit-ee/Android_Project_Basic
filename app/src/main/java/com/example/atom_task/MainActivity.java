@@ -11,7 +11,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.logging.Handler;
 
 public class MainActivity extends AppCompatActivity {
-    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +35,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void logout(View view) {
-        mAuth = FirebaseAuth.getInstance();
-        mAuth.signOut();
-    }
 
 }
