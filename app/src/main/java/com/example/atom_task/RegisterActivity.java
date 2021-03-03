@@ -67,7 +67,7 @@ public class RegisterActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         Toast.makeText(RegisterActivity.this, "User Created", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                        startActivity(new Intent(RegisterActivity.this, HomeActivity.class));
                     }
                     else{
                         Toast.makeText(RegisterActivity.this, "Error : " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -77,9 +77,6 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
-//    private boolean validateCredentials(final String name){
-//
-//        return false;
-//    }
+
 }
 
