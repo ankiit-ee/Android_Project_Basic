@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "886024454528",
+    "project_id": "atomauth-a1c37",
+    "storage_bucket": "atomauth-a1c37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886024454528:android:2dd9d659cddf32f608c165",
+        "android_client_info": {
+          "package_name": "com.example.atom_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886024454528-2la22p404och6ddf505k60p5ub46brr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFEMxgvOMj2Rm4Qu4oDlwIPwL_PysCrzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886024454528-2la22p404och6ddf505k60p5ub46brr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
